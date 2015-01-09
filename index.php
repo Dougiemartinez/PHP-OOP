@@ -101,7 +101,7 @@ and open the template in the editor.
 
 $dog1 = new dog();
 
-$dog1­>firstName = "Choco";
+$dog1­>firstName = "Howard";
 
 $dog1­>lastName = "Chip";
 
