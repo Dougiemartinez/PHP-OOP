@@ -199,6 +199,35 @@ class cat{
                         "{$this->lastName}";
             }
     } 
+    <?php
+    //code below creates the class
+    class Me{
+		public $firstName;
+		public $lastName; 
+		public $skincolor;
+	
+
+		public function __construct($firstName, $lastName, $skincolor){
+			$this->firstName = $firstName;
+			$this->lastName = $lastName;
+			$this->height = $skincolor;
+		}
+
+		public function Name(){
+			return $this->firstName . $this->lastName;
+		}
+
+		public function Height(){
+			return $this->height;
+		}
+}
+		$person1 = new Person();
+		$person1->firstName = "Douglas ";
+		$person1->lastName = "Martinez";
+		$person1->height = "Brown";
+
+		print "My name is " . $person1->Name() . ". " . "I am " . $person1->skincolor();
+	
         ?>
     </body>
 </html>
