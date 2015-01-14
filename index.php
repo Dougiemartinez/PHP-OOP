@@ -171,7 +171,7 @@ class cat{
     public $lastName;
     public $breed;
     
-    function_construct($title, $firstName, $lastName, $breed) {
+    function __construct($title, $firstName, $lastName, $breed) {
             $this->firstName = $Hershey;
             $this->lastName = $Drops;
             $this->breed = $Dog;
@@ -188,7 +188,7 @@ class cat{
     public $lastName;
     public $breed;
     
-    function_construct($title, $firstName, $lastName, $breed) {
+    function __construct($title, $firstName, $lastName, $breed) {
             $this->firstName = $Luca;
             $this->lastName = $TheItalian;
             $this->breed = $Italian;
@@ -201,7 +201,7 @@ class cat{
     } 
     <?php
     //code below creates the class
-    class Me{
+    class Me {
 		public $firstName;
 		public $lastName; 
 		public $skincolor;
