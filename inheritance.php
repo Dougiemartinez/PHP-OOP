@@ -22,7 +22,7 @@ class Animal {
         return "This is my" . $this->firstName.
                 "and last" . $this->lastName;
 }
-class Dolphin extends Animal 
+class Dolphin extends Animal {
     function greet(){
         return $this->dive;
     }
@@ -107,5 +107,117 @@ class Soccer {
     print "My hair is" . $players->getName();
 }
 
+////////////////////////////////////////////////////////////////////LECTURE 5///////////////////////////////////////////////////////////////////////////////
 
+<?php
 
+class Animal {
+    public $head;
+    public $tail;
+    public $roar;
+    public $fur;
+    public $run;
+    
+    function __construct($head, $tail, $roar, $fur, $run) {
+        $this->head = $head;
+        $this->tail = $tail;
+        $this->roar = $roar;
+        $this->fur = $fur;
+        $this->run = $run;
+}
+ 
+    function getName() {
+        return "I am a Lion I have a " . $this->tail;
+}
+class Zebra extends Animal {
+    function __construct($head, $tail, $roar, $fur, $run){
+        parent::__construct($head, $tail, $roar, $fur, $run);
+    $this->meow = $meow;
+    }
+    function greet(){
+        return $this->fur
+    }
+}
+
+class Hippo extends Animal {
+    function __construct($head, $tail, $roar, $fur, $run) {
+        parent::__construct($head, $tail, $roar, $fur, $run);
+        $this->run = $run
+    }
+    $hippo = new Hippo("Hippo", "Run", "Tail", "Roar");
+    print "Animal 1 is a " . $Hippo->getName();
+}
+
+class Car {
+    public $wheels;
+    public $paint;
+    public $windows;
+    public $seat;
+    public $driver;
+    
+    function __construct($wheels, $paint, $windows, $seat, $driver) {
+        $this->head = $wheels;
+        $this->tail = $paint;
+        $this->roar = $windows;
+        $this->fur = $seat;
+        $this->run = $driver;
+}
+ 
+    function getName() {
+        return "I Dirve a car with 3 " . $this->wheels;
+}
+class Driver extends Car {
+    function __construct($wheels, $paint, $windows, $seat, $driver){
+        parent::__construct($wheels, $paint, $windows, $seat, $driver);
+    $this->wheels = $wheels;
+    }
+    function greet(){
+        return $this->wheels
+    }
+}
+
+class Road extends Car {
+    function __construct($wheels, $paint, $windows, $seat, $driver) {
+        parent::__construct($wheels, $paint, $windows, $seat, $driver);
+        $this->driver = $driver
+    }
+    $driver = new driver("Wheels", "Windows", "Seat", "Paint");
+    print "The drivers car has" . $driver->getName();
+    
+    class Person {
+    public $head;
+    public $firstName;
+    public $lastName;
+    public $feet;
+    public $hands;
+    
+    function __construct($head, $firstName, $lastName, $feet, $hands) {
+        $this->head = $head;
+        $this->tail = $firstName;
+        $this->roar = $lastName;
+        $this->fur = $feet;
+        $this->run = $hands;
+}
+ 
+    function getName() {
+        return "I have hair on my" . $this->head;
+}
+class Clothes extends Person {
+    function __construct($head, $firstName, $lastName, $feet, $hands){
+        parent::__construct($head, $firstName, $lastName, $feet, $hands);
+    $this->run = $run;
+    }
+    function hello(){
+        return $this->feet
+    }
+}
+
+class Walk extends Person {
+    function __construct($head, $firstName, $lastName, $feet, $hands) {
+        parent::__construct($head, $firstName, $lastName, $feet, $hands);
+        $this->walk = $walk
+    }
+    $baby = new Baby("Feet", "Head", "Hands");
+    print "The Baby crawls with his" . $hands->getName();
+}
+?>
